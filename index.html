@@ -1,237 +1,150 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>kenn_allpapers_fordesktop</title>
-  </head>
-  <body>
-    <header>
-      <h1>
-        kenn_allpapers
-      </h1>
-      <nav>
-        <label for="pesquise">pesquise:</label> <br> <br>
-        <input type="text">
-        <ul>
-          <li>latest</li>
-          <li>categorias</li>
-          <li>uploads</li>
-          <li>sing in</li>
-        </ul>
-        <button>crie conta</button>
-      </nav> 
-    </header>
-    <section id="topo">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>kenn_allpapers_fordesktop</title>
+<style>
+  * { box-sizing: border-box; margin:0; padding:0; }
+  body { font-family: Arial, sans-serif; background: #414141; color:#dbdbdb; line-height:1.6; }
+  header { background:#242424; padding:20px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+  nav {display: flex; justify-content: center; margin-bottom:10px; }
+  nav h1 {display: flex; justify-content: baseline; margin-right: 50px; color: #dbdbdb;}
+  nav input[type="text"] { padding: 8px; width:60%; max-width:300px; margin-bottom:10px; }
+  nav input[type="text"]::placeholder{ font-family: Arial, sans-serif; color: #746f6f96;}
+  nav ul { list-style:none; display:flex; justify-content:center; gap: 30px; margin-bottom:10px; margin-left: 30px; margin-top: 10px;}
+  nav ul li a { text-decoration:none; color:#007BFF; transition: color 0.3s; }
+  nav ul li a:hover { color:#0056b3; }
+  nav button { padding:10px 20px; border:none; background:#007BFF; color:#fff; border-radius:5px; cursor:pointer; transition: background 0.3s; margin-left: 30px; }
+  nav button:hover { background:#0056b3; }
+  main { max-width:1200px; margin:20px auto; padding:20px; }
+  h2 { text-align:center; margin:30px 0 15px; }
+  .gallery { display:grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+  figure { background: #dbdbdb; padding:10px; border-radius:8px; box-shadow:0 0 8px rgba(0,0,0,0.1); text-align:center; }
+  figure img { max-width:100%; height:auto; border-radius:5px; }
+  figcaption { margin-top:10px; }
+  figcaption a { display:inline-block; padding:8px 15px; background:#007BFF; color:#fff; text-decoration:none; border-radius:5px; transition:background 0.3s; }
+  figcaption a:hover { background:#0056b3; }
+  footer { text-align:center; padding:20px; margin-top:40px; background: #242424; box-shadow:0 -2px 5px rgba(0,0,0,0.1); }
+  a[href="#top"] { display:block; text-align:center; margin-top:30px; color:#007BFF; text-decoration:none; }
+  a[href="#top"]:hover { color:#0056b3; }
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    <section id="top">
       <h1>kenn_allpapers</h1>
     </section>
-    <h2>Dragon ball: GOKU</h2>
-    <h3>Goku Super Saiyajin Deus</h3>
-    <abbr title="O Despertar da Aura Divina"
-      ><img
-        src="Saved Pictures/912051.jpg"
-        alt="O Despertar do Aura Divina"
-        width="550px"
-      /><br /><a href="O Despertar_da_Aura_Divina.html" target="_blank"
-        >O Despertar do Aura Divina</a
-      >
-    </abbr>
+    <input type="text" id="search" name="search" placeholder="Search wallpapers">
+    <ul>
+      <li><a href="#">Categories</a></li>
+      <li><a href="#">Uploads</a></li>
+      <li><a href="#">Sign In</a></li>
+    </ul>
+    <button>Create Account</button>
+  </nav>
+</header>
 
-    <h3>Goku Instinto Superior</h3>
+<main>
+  <!-- Dragon Ball Section -->
+  <h2>Dragon Ball: GOKU</h2>
+  <div class="gallery">
+    <figure>
+      <img src="Saved Pictures/912051.jpg" alt="The Awakening of the Divine Aura">
+      <figcaption><a href="O Despertar_da_Aura_Divina.html" target="_blank">The Awakening of the Divine Aura</a></figcaption>
+    </figure>
+    <figure>
+      <img src="Saved Pictures/Captura de Tela (2).png" alt="Silhouette of Ultra Instinct">
+      <figcaption><a href="Silhueta_do_Instinto_Superior.html" target="_blank">Silhouette of Ultra Instinct</a></figcaption>
+    </figure>
+    <figure>
+      <img src="Saved Pictures/1888139.jpg" alt="Divine Transcendence: Beyond the Limits of a Mortal">
+      <figcaption><a href="Transcendência_Divina-Além_dos_Limites_de_um_Mortal.html" target="_blank">Divine Transcendence</a></figcaption>
+    </figure>
+    <figure>
+      <img src="Saved Pictures/Gemini_Generated_Image_cfwetlcfwetlcfwe.png" alt="The Rise of the Deity">
+      <figcaption><a href="A_Ascensão_da_Divindade.html" target="_blank">The Rise of the Deity</a></figcaption>
+    </figure>
+    <figure>
+      <img src="Saved Pictures/Captura de Tela (3).png" alt="Beyond the Limit: The Silver Glow">
+      <figcaption><a href="Além_do_Limite-O_Brilho_Prateado.html" target="_blank">Beyond the Silver Glow</a></figcaption>
+    </figure>
+    <figure>
+      <img src="Saved Pictures/wp9233666-black-goku-4k-desktop-wallpapers.jpg" alt="The Final Judgment of a God">
+      <figcaption><a href="O_Julgamento_Final_de_um_Deus.html" target="_blank">The Final Judgment of a God</a></figcaption>
+    </figure>
+    <figure>
+      <img src="Saved Pictures/wp5615187-black-goku-rose-wallpapers.jpg" alt="Crimson Justice: The Splendor of Super Saiyan Rosé">
+      <figcaption><a href="Justiça_Carmesim-O_Esplendor_de_Super_Saiyajin_Rosé.html" target="_blank">Crimson Justice</a></figcaption>
+    </figure>
+  </div>
 
-    <abbr title="Silhueta do Instinto Superior">
-      <img
-        src="Saved Pictures/Captura de Tela (2).png"
-        alt="Silhueta do Instinto Superior"
-        width="550 px"
-      />
-      <br /><a href="Silhueta_do_Instinto_Superior.html" target="_blank"
-        >Silhueta do Instinto Superior</a
-      > </abbr
-    ><br />
+  <!-- Dark Knight Section -->
+  <h2>Dark Knight</h2>
+  <div class="gallery">
+    <figure>
+      <img src="knigt dark/f169da0a598814ec38ccb0e25920a011.jpg" alt="The Veteran's Rest">
+      <figcaption><a href="O_Descanso_do_Veterano.html" target="_blank">The Veteran's Rest</a></figcaption>
+    </figure>
+    <figure>
+      <img src="knigt dark/knight3.png" alt="The Ashen Oath">
+      <figcaption><a href="O_Juramento_de_Cinzas.html" target="_blank">The Ashen Oath</a></figcaption>
+    </figure>
+    <figure>
+      <img src="knigt dark/knight4.png" alt="The Sentinel of Darkness">
+      <figcaption><a href="A_Sentinela_da_Escuridão.html" target="_blank">The Sentinel of Darkness</a></figcaption>
+    </figure>
+    <figure>
+      <img src="knigt dark/knight5.png" alt="Iron and Flame Fury">
+      <figcaption><a href="Fúria_de_Ferro_e_Chamas.html" target="_blank">Iron and Flame Fury</a></figcaption>
+    </figure>
+    <figure>
+      <img src="knigt dark/knight6.png" alt="Peace After the Storm">
+      <figcaption><a href="A_Paz_após_a_Tormenta.html" target="_blank">Peace After the Storm</a></figcaption>
+    </figure>
+    <figure>
+      <img src="knigt dark/wp15274020-lonely-knight-wallpapers.jpg" alt="Reflections of Eternity">
+      <figcaption><a href="Reflexos_da_Eternidade.html" target="_blank">Reflections of Eternity</a></figcaption>
+    </figure>
+  </div>
 
-    <abbr title="Transcendência Divina: Além dos Limites de um Mortal."
-      ><img
-        src="Saved Pictures/1888139.jpg"
-        alt="Transcendência_Divina-Além_dos_Limites_de_um_Mortal."
-        width="550 px"
-      />
-      <br /><a
-        href="Transcendência_Divina-Além_dos_Limites_de_um_Mortal.html"
-        target="_blank"
-        >Transcendência Divina: Além dos Limites de um Mortal</a
-      > </abbr
-    ><br />
+  <!-- Naruto Section -->
+  <h2>Naruto Universe</h2>
+  <div class="gallery">
+    <figure>
+      <img src="naruto/naruto.png" alt="The Hero's Glow">
+      <figcaption><a href="O_Brilho_do_Herói.html" target="_blank">The Hero's Glow</a></figcaption>
+    </figure>
+    <figure>
+      <img src="naruto/naruto2.png" alt="Union of Souls: The Broken Seal">
+      <figcaption><a href="União_de_Almas- O_Selo_Quebrado.html" target="_blank">Union of Souls</a></figcaption>
+    </figure>
+    <figure>
+      <img src="naruto/wp5198108-pain-computer-wallpapers.jpg" alt="God of Pain">
+      <figcaption><a href="Deus_da_Dor.html" target="_blank">God of Pain</a></figcaption>
+    </figure>
+    <figure>
+      <img src="naruto/wp5490844-itachi-manga-desktop-wallpapers.jpg" alt="Feather Mirage">
+      <figcaption><a href="Miragem_de_Penas.html" target="_blank">Feather Mirage</a></figcaption>
+    </figure>
+    <figure>
+      <img src="naruto/wp5683335-4k-anime-itachi-wallpapers.jpg" alt="Infinity Gaze">
+      <figcaption><a href="Olhar_do_Infinito.html" target="_blank">Infinity Gaze</a></figcaption>
+    </figure>
+    <figure>
+      <img src="naruto/wp6501571-pain-desktop-wallpapers.jpg" alt="Order of Chaos">
+      <figcaption><a href="A_Ordem_do_Caos.html" target="_blank">Order of Chaos</a></figcaption>
+    </figure>
+  </div>
 
-    <abbr title="A Ascensão da Divindade"
-      ><img
-        src="Saved Pictures/Gemini_Generated_Image_cfwetlcfwetlcfwe.png"
-        alt="A_Ascensão_da_Divindade"
-        width="550 px"
-      />
-      <br /><a href="A_Ascensão_da_Divindade.html" target="_blank"
-        >A Ascensão da Divindade</a
-      ></abbr
-    ><br />
+  <a href="#top">Back to Top</a>
+</main>
 
-    <abbr title="O Brilho Prateado"
-      ><img
-        src="Saved Pictures/Captura de Tela (3).png"
-        alt="Além do Limite: O Brilho Prateado"
-        width="550 px"
-      />
-      <br /><a href="Além_do_Limite-O_Brilho_Prateado.html" target="_blank"
-        >Além do Limite: O Brilho Prateado</a
-      ></abbr
-    ><br />
-
-    <h3>GOKU BLACK</h3>
-    <abbr title="O Julgamento Final de um Deus"
-      ><img
-        src="Saved Pictures/wp9233666-black-goku-4k-desktop-wallpapers.jpg"
-        alt="O_Julgamento_Final_de_um_Deus"
-        width="550 px"
-      />
-      <br /><a href="O_Julgamento_Final_de_um_Deus.html" target="_blank"
-        >O Julgamento Final de um Deus</a
-      ></abbr
-    ><br />
-
-    <abbr title="Justiça Carmesim: O Esplendor de Super Saiyajin Rosé"
-      ><img
-        src="Saved Pictures/wp5615187-black-goku-rose-wallpapers.jpg"
-        alt="Justiça_Carmesim-O_Esplendor_de_Super_Saiyajin_Rosé"
-        width="550 px"
-      />
-      <br /><a
-        href="Justiça_Carmesim-O_Esplendor_de_Super_Saiyajin_Rosé.html"
-        target="_blank"
-        >Justiça Carmesim: O Esplendor de Super Saiyajin Rosé</a
-      ></abbr
-    >
-
-    <h2>Knigt dark</h2>
-
-    <abbr title="O Descanso do Veterano"
-      ><img
-        src="knigt dark/f169da0a598814ec38ccb0e25920a011.jpg"
-        alt="O Descanso do Veterano"
-        width="550 px"
-      />
-      <br /><a href="O_Descanso_do_Veterano.html" target="_blank"
-        >O Descanso do Veterano</a
-      ></abbr
-    >
-    <br />
-
-    <abbr title="O Juramento de Cinzas"
-      ><img
-        src="knigt dark/knight3.png"
-        alt="O Juramento de Cinzas"
-        width="550 px"
-      />
-      <br /><a href="O_Juramento_de_Cinzas.html" target="_blank"
-        >O Juramento de Cinzas</a
-      ></abbr
-    >
-    <br />
-
-    <abbr title="A Sentinela da Escuridão"
-      ><img
-        src="knigt dark/knight4.png"
-        alt="A Sentinela da Escuridão"
-        width="550 px"
-      />
-      <br /><a href="A_Sentinela_da_Escuridão.html" target="_blank"
-        >A Sentinela da Escuridão</a
-      ></abbr
-    >
-    <br />
-
-    <abbr title="Fúria de Ferro e Chamas"
-      ><img
-        src="knigt dark/knight5.png"
-        alt="Fúria de Ferro e Chamas"
-        width="550 px"
-      />
-      <br /><a href="Fúria_de_Ferro_e_Chamas.html" target="_blank"
-        >Fúria de Ferro e Chamas</a
-      ></abbr
-    >
-    <br />
-
-    <abbr title="A Paz após a Tormenta">
-      <img
-        src="knigt dark/knight6.png"
-        alt="A Paz após a Tormenta"
-        width="550 px"
-      />
-      <br /><a href="A_Paz_após_a_Tormenta.html" target="_blank"
-        >A Paz após a Tormenta</a
-      >
-    </abbr>
-    <br />
-
-    <abbr title="Reflexos da Eternidade">
-      <img
-        src="knigt dark/wp15274020-lonely-knight-wallpapers.jpg"
-        alt="Reflexos da Eternidade"
-        width="550 px"
-      />
-      <br /><a href="Reflexos_da_Eternidade.html" target="_blank"
-        >Reflexos da Eternidade</a
-      >
-    </abbr>
-    <h2>Universo Naruto</h2>
-
-    <abbr title="O Brilho do Herói"
-      ><img src="naruto/naruto.png" alt="O Brilho do Herói" width="550 px"
-    /></abbr> <br>
-    <a href="O_Brilho_do_Herói.html" target="_blank" rel="noopener noreferrer">O Brilho do Herói</a> <br>
-
-    <abbr title="União de Almas: O Selo Quebrado"
-      ><img
-        src="naruto/naruto2.png"
-        alt="União de Almas: O Selo Quebrado"
-        width="550 px"
-    /></abbr><br>
-    <a href="União_de_Almas- O_Selo_Quebrado.html" target="_blank" rel="noopener noreferrer">União de Almas: O Selo Quebrado</a><br>
-
-    <abbr title="Deus da Dor"
-      ><img
-        src="naruto/wp5198108-pain-computer-wallpapers.jpg"
-        alt="Deus da Dor"
-        width="550 px"
-    /></abbr><br>
-    <a href="Deus_da_Dor.html" target="_blank" rel="noopener noreferrer">Deus da Dor</a><br>
-
-    <abbr title="Miragem de Penas"
-      ><img
-        src="naruto/wp5490844-itachi-manga-desktop-wallpapers.jpg"
-        alt="Miragem de Penas"
-        width="550 px"
-    /></abbr><br>
-    <a href="Miragem_de_Penas.html" target="_blank" rel="noopener noreferrer">Miragem de Penas</a><br>
-
-    <abbr title="Olhar do Infinito"
-      ><img
-        src="naruto/wp5683335-4k-anime-itachi-wallpapers.jpg"
-        alt="Olhar do Infinito"
-        width="550 px"
-    /></abbr><br>
-    <a href="Olhar_do_Infinito.html" target="_blank" rel="noopener noreferrer">Olhar do Infinito</a> <br>
-
-    <abbr title="A Ordem do Caos"
-      ><img
-        src="naruto/wp6501571-pain-desktop-wallpapers.jpg"
-        alt="A Ordem do Caos"
-        width="550 px"
-    /></abbr> <br>
-    <a href="A_Ordem_do_Caos.html" target="_blank" rel="noopener noreferrer">A Ordem do Caos</a> <br>
-    <a href="#topo">voltar ao topo</a>
-    <footer>
-      <h1>kenn_allpapers</h1>
-      <p></p>
-    </footer>
-  </body>
+<footer>
+  <h1>kenn_allpapers</h1>
+  <p>Welcome to our wallpaper site, featuring a wide range of designs and styles to personalize your screens and spaces with inspiration and style.</p>
+  <p>&copy; kenn_allpapers_fordesktop2026</p>
+</footer>
+</body>
 </html>
